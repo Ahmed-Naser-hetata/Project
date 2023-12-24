@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="purchase.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="form-center">
+        <h1 class="main-head" >PAY FORM</h1>
+        <form method="post" action="purchase.php">
+            <label class="label-form" for="frist name">Frist Name</label>
+            <input class="input-text" type="text" name="name1" id="frist name" required placeholder="Frist name">
+
+            <label class="label-form" for="last name">Last Name</label>
+            <input class="input-text" type="text" name="lastname" id="last name"required placeholder="Last name">
+
+            <!-- <label class="radio-label" for="male">Male</label>
+            <input class="radioBtn" type="radio" name="gender" id="male" value="m" required>
+
+            <label class="radio-label" for="female">Female</label>
+            <input class="radioBtn" type="radio" name="gender" id="female" value="f" required><br> -->
+
+            <label class="label-form" for="gmail">Gmail</label>
+            <input class="input-text" type="email" name="gmail" id="gmail" required placeholder="@gmail.com">
+
+            <label class="label-form" for="number">Number</label>
+            <input class="input-text" type="tel" name="number" id="number" required placeholder="Enter Number">
+
+            <label class="label-form" for="card-number" >Card Number </label>
+            <input class="input-text" type="number" id="card-number" required placeholder="Card Number" minlength="16" name="card" ><br>
+
+            <input  class="submitBtn" type="submit" id="purchase" name="btn" onclick="validateRegistration()" >
+        </form> 
+    </div class="label-form">
+    <script>
+      function validateRegistration() {
+    
+    const firstname = document.getElementById('frist name').value;
+    const lastname = document.getElementById('last name').value;
+    const gmail = document.getElementById('gmail').value;
+    const number = document.getElementById('number').value;
+    const card = document.getElementById('card-number').value;
+
+    
+    if (firstname === '' || lastname === ''||gmail===''|| number===''||card===''){
+      alert("Please Fill All Fields")
+
+    }
+      else{
+          alert("Done Successfully")
+  
+      }}
+  </script>
+
+</body>
+</html>

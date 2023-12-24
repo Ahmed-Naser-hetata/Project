@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+}
+body{
+    background-color:rgb(168, 168, 168) ;
+}
+ .logo{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(black,grey) ;
+    padding: 10px;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #d8dcdd;
+    margin-bottom: 0 ;
+} 
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.nav a{
+    text-decoration: none;
+    margin-left:50px;   
+}
+h1{
+display: flex;
+justify-content: left;
+text-decoration: underline;
+padding: 5px;
+font-style: italic;
+color: #d8dcdd ;
+margin-bottom:80px ;
+font-size: 40px;
+
+}
+.master{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.Spareo{
+    width: 50% ;
+}
+.Spareo img{
+    width: 90%;
+    height: 50%;
+    border: 5px double rgb(0, 79, 0);
+    border-radius: 10px;
+}
+.Spareo p,a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.Spareo a{
+    text-decoration: none;
+    color: #d8dcdd ;
+    background-color: rgb(28, 28, 28);
+    width: 50%;
+    padding: 10px;
+    margin-left:22% ;
+    margin-bottom: 70px;
+    font-size: 25px;
+}
+.Spareo p{
+    font-size: x-large;
+}
+.Spareo a:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+
